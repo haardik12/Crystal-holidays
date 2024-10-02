@@ -1,0 +1,23 @@
+.card-pricing::before,
+.card-pricing::after {
+  content: '';
+  position: absolute;
+}
+
+.card-pricing::after {
+  width: 100%;
+  height: 14px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.card-pricing::before {
+  width: 14px;
+  height: 16px;
+  background-color: hsl(210, 96%, 37%);
+  top: 0;
+  left: -14px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
